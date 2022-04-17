@@ -1,1 +1,283 @@
 @import "reset.css";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.login {
+  width: 500px;
+  padding: 30px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.wenivLogo {
+  margin-bottom: 28px;
+}
+
+.welcome {
+  margin-bottom: 32px;
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.loginBtn {
+  width: 440px;
+  padding: 17px 0 15px;
+  border: none;
+  border-radius: 5px;
+  background: #2f80ed;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* login modal */
+
+form button {
+  cursor: pointer;
+}
+
+.loginModal {
+  width: 520px;
+  height: 712px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+
+.loginHeader {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 0 18px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  position: relative;
+}
+
+.closeModal {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.loginForm {
+  padding: 26px 23px 25px;
+}
+
+.welcomeText {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.loginInput {
+  padding: 14px 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.passwordInput {
+  margin-bottom: 16px;
+}
+
+.maintainCheckBox {
+  display: none;
+}
+
+.maintainLabel {
+  width: 141px;
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #767676;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.maintainLabel::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  float: left;
+  background-image: url(imgs/check-box.png);
+  background-size: cover;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.maintainCheckBox:checked + .maintainLabel::before {
+  background-image: url(imgs/check-box-checked.png);
+}
+
+.modalLoginBtn {
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.signInFindContainer {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #767676;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.signIn::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 1px;
+  height: 14px;
+  background-color: #767676;
+  margin: 0 10px 0 12px;
+}
+
+.contour {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #767676;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 19px;
+}
+
+.contour::before {
+  content: "";
+  width: 210px;
+  height: 1px;
+  display: block;
+  background: #c4c4c4;
+  margin-right: 13px;
+}
+
+.contour::after {
+  content: "";
+  width: 210px;
+  height: 1px;
+  display: block;
+  background: #c4c4c4;
+  margin-left: 13px;
+}
+
+.socialLoginBtn {
+  width: 472px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px 0px;
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #767676;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.googleBtn::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("imgs/sns_sprites.png") -58px -10px;
+}
+
+.fbBtn {
+  border-color: #2d9cdb;
+}
+
+.fbBtn::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("imgs/sns_sprites.png") -10px -10px;
+}
+
+.naverBtn {
+  border-color: #00bf18;
+}
+
+.naverBtn::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("imgs/sns_sprites.png") -58px -58px;
+}
+
+.kakaoBtn {
+  border-color: #f2c94c;
+}
+
+.kakaoBtn::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("imgs/sns_sprites.png") -10px -58px;
+}
+
+.hidden {
+  display: none;
+}
