@@ -9,16 +9,23 @@
   </head>
   <body>
     <!-- main login start -->
+    <!-- main 태그로 감싸지 못함 -->
+    <!-- section 보다는 article이 더 나음 -->
     <section class="login">
+      <!-- article을 사용하면서 로고에 h1을 주는게 좋아보임 -->
       <img class="wenivLogo" src="./imgs/weniv-logo.png" alt="weniv logo" />
       <p class="welcome">위니브를 더 즐겁고 편리하게 이용하세요.</p>
       <button class="loginBtn" type="button">로그인</button>
     </section>
     <!-- main login end -->
     <!-- login modal start-->
+    <!-- 역시 section보다는 article로 감싸고 article 내부에 두 section으로 나눔 -->
     <section class="loginModal hidden">
       <header class="loginHeader">
+        <!-- 사실 h2로 주기에는 소셜 부분이 동떨어짐 그래서 따로 h2를 주고 숨기는것이 좋아보임 -->
+        <!-- 나머지는 h3로 -->
         <h2>로그인 또는 회원가입</h2>
+        <!-- 닫기 버튼은 img 보다는 button으로 그리고 접근성을 고려해서 맨 밑으로 이동 -->
         <img
           src="imgs/close.png"
           class="closeModal"
@@ -26,7 +33,9 @@
         />
       </header>
       <form class="loginForm" action="#">
+        <!-- form 내부보다는 form 밖으로 빼는것이 좋아보임 -->
         <p class="welcomeText">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+        <!-- input 태그에 label 꼭 써주고, 아이디와 비밀번호 fieldset으로 감싸고 모듈화 -->
         <input
           class="loginInput"
           placeholder="아이디"
@@ -56,6 +65,8 @@
           <a href="#">아이디/비밀번호 찾기</a>
         </div>
         <span class="contour">또는</span>
+        <!-- section 태그로 감싸 h3 주기 -->
+        <!-- ul li로 하면서 button 말고 a태그가 좋아보임, 주로 소셜로그인은 다른 페이지로 이동하는 경우가 많음 -->
         <button class="socialLoginBtn googleBtn">구글 계정으로 로그인</button>
         <button class="socialLoginBtn fbBtn">페이스북 계정으로 로그인</button>
         <button class="socialLoginBtn naverBtn">네이버 계정으로 로그인</button>
